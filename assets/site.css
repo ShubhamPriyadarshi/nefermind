@@ -165,7 +165,8 @@
   .gcard.locked .blurry{filter:blur(3px)}
 
   /* ── STUDIO ── */
-  .studio-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+  .studio-grid{display:grid;grid-template-columns:1fr;gap:50px;align-items:center}
+  .studio-text{max-width:680px}
   .studio-text p{color:var(--mut);font-size:17px;margin-bottom:18px}
   .studio-text p b{color:var(--txt)}
   .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
