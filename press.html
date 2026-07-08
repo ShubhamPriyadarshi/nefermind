@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>NeferMind Studios — Press Kit</title>
+<meta name="description" content="Press kit for NeferMind Studios and DRIFTRAGE. Logos, screenshots, fact sheet, and contact for press and creators.">
+<meta name="theme-color" content="#07070d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%AC%A1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  /* press-kit specific */
+  .pk-hero{position:relative;padding:130px 0 50px;overflow:hidden;border-bottom:1px solid var(--bdr)}
+  .pk-hero::before{content:'';position:absolute;inset:0;background:
+    radial-gradient(80% 60% at 30% 0%,rgba(255,41,117,.12),transparent 60%),
+    radial-gradient(60% 60% at 90% 20%,rgba(0,240,255,.1),transparent 60%);z-index:0}
+  .pk-hero .wrap{position:relative;z-index:2}
+  .pk-hero h1{font-size:clamp(40px,7vw,84px);line-height:.95;margin-top:14px}
+  .pk-hero .sub{color:var(--mut);font-size:18px;margin-top:14px;max-width:560px}
+  .factgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;margin-top:44px}
+  .factsheet{border:1px solid var(--bdr);border-radius:18px;padding:30px;background:linear-gradient(180deg,var(--panel),var(--bg2))}
+  .factsheet h3{font-size:13px;letter-spacing:.16em;color:var(--pink);text-transform:uppercase;margin-bottom:18px;font-family:'JetBrains Mono';display:flex;align-items:center;gap:10px}
+  .factsheet h3::before{content:'';width:18px;height:1px;background:var(--pink);box-shadow:var(--glow-pink)}
+  .dl{display:grid;gap:11px}
+  .dl .row{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid rgba(34,35,58,.5);font-size:14.5px}
+  .dl .row:last-child{border-bottom:0}
+  .dl .k{color:var(--mut);font-family:'JetBrains Mono';font-size:12px;letter-spacing:.06em;text-transform:uppercase;flex:0 0 auto}
+  .dl .v{color:var(--txt);text-align:right;font-weight:500}
+  .dl .v.cyan{color:var(--cyan)}
+  .long{color:var(--mut);font-size:15px;margin:16px 0 0;line-height:1.7}
+  .long b{color:var(--txt)}
+  .assets-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px;margin-top:8px}
+  .asset{border:1px solid var(--bdr);border-radius:14px;overflow:hidden;background:var(--bg2);transition:border-color .25s,transform .25s;cursor:pointer;position:relative}
+  .asset:hover{border-color:var(--cyan);transform:translateY(-4px)}
+  .asset .frame{aspect-ratio:1/1;display:grid;place-items:center;background:radial-gradient(120% 100% at 50% 0%,rgba(255,41,117,.1),var(--bg2));overflow:hidden}
+  .asset .frame img{width:82%;filter:drop-shadow(0 8px 20px rgba(0,0,0,.5))}
+  .asset .cap{padding:11px 13px;font-size:12.5px;color:var(--mut);border-top:1px solid var(--bdr);font-family:'JetBrains Mono';letter-spacing:.04em}
+  .asset .cap b{color:var(--txt);font-family:'Space Grotesk';letter-spacing:0;font-weight:500}
+  .asset .dl-btn{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:8px;background:rgba(7,7,13,.7);border:1px solid var(--bdr);display:grid;place-items:center;font-size:14px;color:var(--cyan);opacity:0;transition:opacity .2s}
+  .asset:hover .dl-btn{opacity:1}
+  .pk-section{padding:70px 0}
+  .pk-section + .pk-section{border-top:1px solid var(--bdr)}
+  .pk-contact{display:flex;gap:16px;flex-wrap:wrap;margin-top:26px}
+  .pk-back{position:fixed;top:18px;left:18px;z-index:130}
+  @media (max-width:560px){.factsheet{padding:22px}.pk-hero{padding-top:110px}.pk-back{position:static;margin-bottom:14px}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div class="grain"></div>
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+
+<nav id="nav" class="scrolled">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="hex">⬡</span>NEFER<span class="accent">MIND</span></a>
+    <div class="links">
+      <a href="index.html#game">Game</a>
+      <a href="index.html#studio">Studio</a>
+      <a href="press.html" style="color:var(--txt)">Press</a>
+      <a href="index.html#press" class="btn-wrap"><span class="btn primary" data-magnetic>Back to site <span class="arr">→</span></span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="pk-hero">
+  <div class="wrap">
+    <div class="sec-tag">Press Kit</div>
+    <h1>Everything you need to <span class="grad" style="background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">cover us.</span></h1>
+    <p class="sub">Fact sheets, art, and logos for NeferMind Studios and DRIFTRAGE. All assets are free to use in editorial coverage, reviews, and videos. Right-click any image to save, or hit the download icon.</p>
+    <div class="pk-contact">
+      <a href="mailto:press@nefermind.com" class="btn primary" data-magnetic>press@nefermind.com <span class="arr">→</span></a>
+      <a href="mailto:studio@nefermind.com" class="btn ghost" data-magnetic>General contact</a>
+    </div>
+  </div>
+</header>
+
+<section class="pk-section">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:34px">
+      <div class="sec-tag">Fact Sheets</div>
+      <h2 class="sec-title">The <span class="grad">details.</span></h2>
+    </div>
+    <div class="factgrid">
+      <div class="factsheet reveal">
+        <h3>NeferMind Studios</h3>
+        <div class="dl">
+          <div class="row"><span class="k">Founded</span><span class="v">2026</span></div>
+          <div class="row"><span class="k">Based</span><span class="v">Remote · Worldwide</span></div>
+          <div class="row"><span class="k">Founders</span><span class="v">Shubham Priyadarshi · Abhishek Kulkarni</span></div>
+          <div class="row"><span class="k">Team size</span><span class="v">2</span></div>
+          <div class="row"><span class="k">Focus</span><span class="v">Hand-crafted arcade games</span></div>
+          <div class="row"><span class="k">Platforms</span><span class="v">iOS · Android</span></div>
+          <div class="row"><span class="k">Website</span><span class="v cyan">nefermind.com</span></div>
+          <div class="row"><span class="k">Contact</span><span class="v cyan">studio@nefermind.com</span></div>
+        </div>
+      </div>
+      <div class="factsheet reveal" data-d="1">
+        <h3>DRIFTRAGE</h3>
+        <div class="dl">
+          <div class="row"><span class="k">Title</span><span class="v">DRIFTRAGE</span></div>
+          <div class="row"><span class="k">Tagline</span><span class="v">Drift to kill.</span></div>
+          <div class="row"><span class="k">Genre</span><span class="v">Top-down survival driver</span></div>
+          <div class="row"><span class="k">Platforms</span><span class="v">iOS · Android</span></div>
+          <div class="row"><span class="k">Release</span><span class="v">Coming soon</span></div>
+          <div class="row"><span class="k">Price</span><span class="v">Free-to-play (no pay-to-win)</span></div>
+          <div class="row"><span class="k">Players</span><span class="v">Single player</span></div>
+          <div class="row"><span class="k">Internet</span><span class="v">Offline-first</span></div>
+        </div>
+        <p class="long"><b>DRIFTRAGE</b> is a neon-wasteland arcade driver where your car is the weapon. Drift into enemy waves, survive a shrinking storm, and build your wreck into a beast across runs. Six enemy archetypes — chase, lunge, kite, joust, anchor, and air — each demand a different drift. Seeded daily runs, shareable clips, and a wreck-to-beast progression keep every session worth one more try.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pk-section">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:30px">
+      <div class="sec-tag">Art & Logos</div>
+      <h2 class="sec-title">Key <span class="grad">art.</span></h2>
+      <p class="sec-sub">High-resolution transparent PNGs. Click any to open full-size, then save.</p>
+    </div>
+    <div class="assets-grid">
+      <a class="asset reveal" href="assets/img/interceptor.png" download data-magnetic>
+        <div class="frame"><img src="assets/img/interceptor.png" alt="interceptor"></div>
+        <div class="cap"><b>The Interceptor</b><br>hero car · 512px</div>
+        <span class="dl-btn">↓</span>
+      </a>
+      <a class="asset reveal" data-d="1" href="assets/img/skin-wreck.png" download data-magnetic>
+        <div class="frame"><img src="assets/img/skin-wreck.png" alt="the wreck" style="width:54%"></div>
+        <div class="cap"><b>The Wreck</b><br>base car · hi-res</div>
+        <span class="dl-btn">↓</span>
+      </a>
+      <a class="asset reveal" data-d="1" href="assets/img/mob-chaser.png" download data-magnetic>
+        <div class="frame"><img src="assets/img/mob-chaser.png" alt="chaser"></div>
+        <div class="cap"><b>Chaser</b><br>enemy · hi-res</div>
+        <span class="dl-btn">↓</span>
+      </a>
+      <a class="asset reveal" data-d="2" href="assets/img/mob-leaper.png" download data-magnetic>
+        <div class="frame"><img src="assets/img/mob-leaper.png" alt="leaper"></div>
+        <div class="cap"><b>Leaper</b><br>enemy · hi-res</div>
+        <span class="dl-btn">↓</span>
+      </a>
+      <a class="asset reveal" data-d="2" href="assets/img/mob-raider.png" download data-magnetic>
+        <div class="frame"><img src="assets/img/mob-raider.png" alt="raider"></div>
+        <div class="cap"><b>Raider</b><br>enemy · hi-res</div>
+        <span class="dl-btn">↓</span>
+      </a>
+      <a class="asset reveal" data-d="3" href="assets/img/mob-drone.png" download data-magnetic>
+        <div class="frame"><img src="assets/img/mob-drone.png" alt="drone"></div>
+        <div class="cap"><b>Drone</b><br>enemy · hi-res</div>
+        <span class="dl-btn">↓</span>
+      </a>
+      <a class="asset reveal" data-d="3" href="assets/img/title-screen.png" download data-magnetic>
+        <div class="frame" style="grid-template-rows:1fr"><img src="assets/img/title-screen.png" alt="title screen" style="width:100%;height:100%;object-fit:cover;border-radius:0"></div>
+        <div class="cap"><b>Title screen</b><br>screenshot</div>
+        <span class="dl-btn">↓</span>
+      </a>
+    </div>
+    <p class="long" style="margin-top:26px">Full-res enemy roster (all 8 archetypes), gameplay screenshots, and a studio wordmark logo will be added here as they're finalized. Email <b>press@nefermind.com</b> if you need something not listed.</p>
+  </div>
+</section>
+
+<section class="pk-section">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:24px">
+      <div class="sec-tag">Additional</div>
+      <h2 class="sec-title">More <span class="grad">soon.</span></h2>
+    </div>
+    <div class="factgrid">
+      <div class="factsheet reveal">
+        <h3>Coming to the kit</h3>
+        <div class="dl">
+          <div class="row"><span class="k">Studio wordmark</span><span class="v">PNG + SVG lockup</span></div>
+          <div class="row"><span class="k">App icon</span><span class="v">1024px + favicon set</span></div>
+          <div class="row"><span class="k">Trailer</span><span class="v">MP4 · 16:9 + 9:16</span></div>
+          <div class="row"><span class="k">Gameplay GIFs</span><span class="v">drift · ram · daily run</span></div>
+          <div class="row"><span class="k">Full enemy roster</span><span class="v">8 hi-res PNGs</span></div>
+        </div>
+      </div>
+      <div class="factsheet reveal" data-d="1">
+        <h3>Social & links</h3>
+        <div class="dl">
+          <div class="row"><span class="k">Instagram</span><span class="v cyan">@driftragegame</span></div>
+          <div class="row"><span class="k">X / Twitter</span><span class="v cyan">@driftragegame</span></div>
+          <div class="row"><span class="k">YouTube</span><span class="v cyan">@nefermindstudios</span></div>
+          <div class="row"><span class="k">GitHub</span><span class="v cyan">ShubhamPriyadarshi</span></div>
+          <div class="row"><span class="k">Press email</span><span class="v cyan">press@nefermind.com</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="hex">⬡</span>NEFER<span class="accent">MIND</span></a>
+    <span class="copy">© <span id="year"></span> NEFERMIND STUDIOS</span>
+    <span class="made">Made in the <b>wasteland</b> · Built with momentum</span>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
